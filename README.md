@@ -1,4 +1,5 @@
-# Example Project Documentation Guideline
+<font size = 3> AiCore Project </font> 
+# Hangman Game Documentation
 
 > Include here a brief description of the project, what technologies are used etc.
 My first pratical assignment as part of the AiCore Ai-engineering bootcamp was to build a simple Hangman game. This repo conatins:
@@ -51,36 +52,36 @@ Follow the instructions in the [Setup-guide.ipynb](/Setup-guide.ipynb) notebook 
 ### **Task 5:**   Start documenting your experience<br>
 - 5.1 Create a README file for your project using a method of your choice. A simple way to create a "ReadMe" is by using the `echo` command from your command line\terminal, as follows:
 
-    a. From the root directory for your project, launch terminal or navigate to the project root folder using `cd <YOUR-PROJECT-FILEPATH>`.<br>
+        a. From the root directory for your project, launch terminal or navigate to the project root folder using `cd <YOUR-PROJECT-FILEPATH>`.<br>
 
-    b. Then use the `echo` command to create your README
+        b. Then use the `echo` command to create your README
 
-    ```console
-    echo "# Project Hangman" > README.md
-    ```
+            ```console
+            echo "# Project Hangman" > README.md
+            ```
     <br>
     
-    c. Check your README.md file has been created, by using command line\terminal command:
+        c. Check your README.md file has been created, by using command line\terminal command:
 
-    ```console
-    open README.md
-    ```
-    + Your ReadMe file should open in a new text editor window.<br><br>
+        ```console
+        open README.md
+        ```
+        + Your ReadMe file should open in a new text editor window.<br><br>
 
 - 5.2 Add documentation to your README file following this [Example Documentation](./00_Template/ExampleDocumentation.md) guide. Describe the code you wrote in this milestone.<br>
 
 - 5.3 Upload your hangman files to your remote Git repository (e.g. GitHub), using the following commands:<br>
 
-    a. From the root directory for your project, launch a terminal window or navigate to the project root folder using `cd <YOUR-PROJECT-FILEPATH>`.<br><br>
+        a. From the root directory for your project, launch a terminal window or navigate to the project root folder using `cd <YOUR-PROJECT-FILEPATH>`.<br><br>
 
-    b. Then use the `git add -all` and `git commit` commands to push your local changes to your remote  to repository.<br>
+        b. Then use the `git add -all` and `git commit` commands to push your local changes to your remote  to repository.<br>
 
-    ```console
-    git init
-    git status
-    git add --all
-    git commit -m "replace text with your commit notes/comments."
-    ```
+        ```console
+        git init
+        git status
+        git add --all
+        git commit -m "replace text with your commit notes/comments."
+        ```
 
 <br>
 
