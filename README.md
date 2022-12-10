@@ -4,17 +4,27 @@
 # Hangman Game Documentation
 
 
-> Include here a brief description of the project, what technologies are used etc.
-My first pratical assignment as part of the AiCore Ai-engineering bootcamp was to build a simple Hangman game. This repo conatins:
+> My first pratical assignment as part of the AiCore Ai-engineering bootcamp was to build a simple Hangman game. This repo conatins:
 > * a template python script (found in the [00_Template](/00_Template) folder), which can be used as souce of insperation or framework to support in developing your own hangman game.<br><br>
 > * Various prototype notebooks and python scripts, which I used to test & develop my end game in stages <i>(found in the [01_Dev](/01_Dev) folder). </i><b>Note!! The files in this folder are raw and my not resemable the end result or themost beatufil code.</b><br><br>
 > * My end game <i>(found in the [02_Solution](/02_Solution) folder).</i><br><br>
-
+> ### **Technology\frame work used:**<br>
+> This project is a simple Python project that's suitable for intermediate level Python programmers. There is no official framework used, however, I have attempted to implement object-oriented programming (OOP)[^1] and "Don't repeat yourself" (i.e., DRY)[^2] methodologies where I could.
+>
+> The game itself was written using VS Code, `Python version 3.9` using `jupyter notebooks` during the development stage, with the final game exported to python script format (*.ipy) with magic cells `(#%%)` to enable a user to step through code blocks if needed.
+>
+> [^1]: Tutorial on Python OOP - by realpython.com <br>
+> [^2]: Blog on DRY menthogly - by xyz.com <br>
 <br>
 
-The project deliverables have been broken up into units of work called "milestones", which in turn are divided into tasks as follows:<br>
+
 
 ---
+The project deliverables have been broken up into units of work called "milestones", which in turn are divided into tasks as follows:<br>
+<br>
+
+---
+<br>
 
 ## Milestone 1 - Set up the environment
 
