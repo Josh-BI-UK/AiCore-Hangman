@@ -2,49 +2,53 @@
 
 > Include here a brief description of the project, what technologies are used etc.
 My first pratical assignment as part of the AiCore Ai-engineering bootcamp was to build a simple Hangman game. This repo conatins:
-> * a template python script (found in the [00_Template](./00_Template) folder), which can be used as souce of insperation or framework to support in developing your own hangman game.<br><br>
-> * Various prototype notebooks and python scripts, which I used to test & develop my end game in stages <i>(found in the [01_Dev](./01_Dev) folder). </i><b>Note!! The files in this folder are raw and my not resemable the end result or themost beatufil code.</b><br><br>
-> * My end game <i>(found in the [02_Solution](./02_Solution) folder).</i><br><br>
+> * a template python script (found in the [00_Template](/00_Template) folder), which can be used as souce of insperation or framework to support in developing your own hangman game.<br><br>
+> * Various prototype notebooks and python scripts, which I used to test & develop my end game in stages <i>(found in the [01_Dev](/01_Dev) folder). </i><b>Note!! The files in this folder are raw and my not resemable the end result or themost beatufil code.</b><br><br>
+> * My end game <i>(found in the [02_Solution](/02_Solution) folder).</i><br><br>
 
+<br>
 
 The project deliverables have been broken up into units of work called "milestones", which in turn are divided into tasks as follows:<br>
- 
-## Milestone 1
 
-- Answer some of these questions in the next few bullet points. What have you built? What technologies have you used? Why have you used those?
+---
 
-- Example: The FastAPI framework allows for fast and easy construction of APIs and is combined with pydantic, which is used to assert the data types of all incoming data to allow for easier processing later on. The server is ran locally using uvicorn, a library for ASGI server implementation.
-  
-```python
-"""Insert your code here"""
-```
+## Milestone 1 - Set up the environment
 
-> Insert an image/screenshot of what you have built so far here.
+### **Task 1:**  In this project, we'll use GitHub to track changes to our code and save them online in a GitHub repo.
+
+Follow the instructions in the [Setup-guide.ipynb](/Setup-guide.ipynb) notebook found in the root directory.
+<br>
+
+---
+<br>
 
 ## Milestone 2
+<br>
 
-- Does what you have built in this milestone connect to the previous one? If so explain how. What technologies are used? Why have you used them? Have you run any commands in the terminal? If so insert them using backticks (To get syntax highlighting for code snippets add the language after the first backticks).
+### **Task 1:** Define list of possible words, Create a file named `milestone_2.py`. <br>
+- 1.1. Create a list containing the names of your 5 favorite fruits. <br>
+- 1.2. Assign this list to a variable called `word_list`. <br>
+- 1.3. Print out the newly created list to the standard output (screen). <br>
+<br>
 
-- Example below:
+### **Task 2:**  Choose a random word from list <br>
+- 2.2. `import` python module called `random` at the very top of your script.<br>
+- 2.3. Create the `random.choice` method and pass the `word_list` variable into the choice method. <br>
+- 2.4. Assign the randomly generated word to a variable called `word`.<br>
+- 2.5. Print out the varible `word`. Run your code several times and observe the words printed out after each run. 
+    - <i><b>!!!Note: Random may sometimes choice the same word, every so often. Don't worry this is perfectly normal as the selection is random, however, no rule exist that random can't select the same string more than once.</b></i><br>
 
-```bash
-/bin/kafka-topics.sh --list --zookeeper 127.0.0.1:2181
-```
+### **Task 3:**  Ask the user for input.<br>
+- 3.1. Using the `input` function, ask the user to enter a single letter.<br>
+- 3.2 Assign the input to a variable called `guess`.<br>
+<br>
 
-- The above command is used to check whether the topic has been created successfully, once confirmed the API script is edited to send data to the created kafka topic. The docker container has an attached volume which allows editing of files to persist on the container. The result of this is below:
+### **Task 4:**   Check that the input is a single character<br>
+- 4.1. Create an `if` statement that checks if the length of the `input` is equal to 1, and the input is an alphabet.<br>
+- 4.2 In the body of the `if` statement, print a message that says `"Good choice!"`.<br>
+- 4.3 Create an else block that prints `"Oops! That is not a valid input."`, if the preceeding conditions are not met.<br>
 
-```python
-"""Insert your code here"""
-```
-
-> Insert screenshot of what you have built working.
-
-## Milestone n
-
-- Continue this process for every milestone, making sure to display clear understanding of each task and the concepts behind them as well as understanding of the technologies used.
-
-- Also don't forget to include code snippets and screenshots of the system you are building, it gives proof as well as it being an easy way to evidence your experience!
-
+---
 ## Conclusions
 
 - Maybe write a conclusion to the project, what you understood about it and also how you would improve it or take it further.
