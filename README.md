@@ -8,13 +8,13 @@
 > * a template python script (found in the [00_Template](/00_Template) folder), which can be used as souce of insperation or framework to support in developing your own hangman game.<br><br>
 > * Various prototype notebooks and python scripts, which I used to test & develop my end game in stages <i>(found in the [01_Dev](/01_Dev) folder). </i><b>Note!! The files in this folder are raw and my not resemable the end result or themost beatufil code.</b><br><br>
 > * My end game <i>(found in the [02_Solution](/02_Solution) folder).</i><br><br>
-> ### **Technology\frame work used:**<br>
-> This project is a simple Python project that's suitable for intermediate level Python programmers. There is no official framework used, however, I have attempted to implement object-oriented programming (OOP)[^1] and "Don't repeat yourself" (i.e., DRY)[^2] methodologies where I could.
+> ### **Technology\framework used:**<br>
+> This project is a simple Python project that's suitable for intermediate level Python programmers. There is no official framework used, however, I have attempted to implement object-oriented programming (OOP)[^1] and "“Don’t Repeat Yourself" (i.e., DRY)[^2] methodologies where I could.
 >
-> The game itself was written using VS Code, `Python version 3.9` using `jupyter notebooks` during the development stage, with the final game exported to python script format (*.ipy) with magic cells `(#%%)` to enable a user to step through code blocks if needed.
+> The game itself was written using `VS Code`, `Python version 3.9` using `jupyter notebooks` during the development stage, with the final game exported to python script format (*.ipy) with magic cells (`# %%`) to enable a user to step through code blocks if needed.
 >
-> [^1]: Tutorial on Python OOP - by realpython.com <br>
-> [^2]: Blog on DRY menthogly - by xyz.com <br>
+> [^1]: Tutorial on Python OOP - by realpython.com (https://realpython.com/python3-object-oriented-programming/) <br>
+> [^2]: Blog on DRY methodology - by scientificallysound.org (https://scientificallysound.org/2018/07/19/python-functions/)<br>
 <br>
 
 
@@ -22,11 +22,11 @@
 ---
 The project deliverables have been broken up into units of work called "milestones", which in turn are divided into tasks as follows:<br>
 <br>
-
----
 <br>
 
 ## Milestone 1 - Set up the environment
+The main objective of milestone 1 was to set-up our development enviroment.
+<br>
 
 ### **Task 1:**  In this project, we'll use GitHub to track changes to our code and save them online in a GitHub repo.
 
@@ -37,6 +37,7 @@ Follow the instructions in the [Setup-guide.ipynb](/Setup-guide.ipynb) notebook 
 <br>
 
 ## Milestone 2
+During Milestone 2, we developed the components of the game that define the list of guessable words, a mechanism for picking a word at random from thw word list, and a method for asking the player to select a one charater guess letter.
 <br>
 
 ### **Task 1:** Define list of possible words, Create a file named `milestone_2.py`. <br>
@@ -97,6 +98,71 @@ Follow the instructions in the [Setup-guide.ipynb](/Setup-guide.ipynb) notebook 
     ```
 
 <br>
+
+---
+<br>
+
+## Milestone 3
+Milestone 3, The aim of this milestone was to code functionality that checks if the guessing letter is part of the randomly chosen word.
+<br>
+
+### **Task 1:** Iteratively check if the guessed letter is vaild guess
+Write code that will continuously ask the user for a letter and validate it.
+
+Create a new script called `milestone_3.py`, this file will contain the code for this milestone.<br>
+- **1.1** Create a `while` loop and set the condition to `True`. Setting the condition to True ensures that the code run continuously. In the body of the loop, write the code required for the following tasks 3, 4 & 5. <br>
+- **1.2** A Ask the user to guess a letter and assign this to a variable called `guess`. <br>
+- **1.3** Check that the `guess` is a single, alphabetical character.
+- **1.4** If the `guess` passes the checks, break out of the loop.
+- **1.5** If the `guess` does not pass the checks, then print a message saying "Invalid letter. Please, enter a single alphabetical character."<br>
+
+### **Task 2:** Cheak whether the guess in the word<br>
+
+Check whether the letter guessed by the user is in the secret word that was randomly chosen by the computer. For example, if the user guesses the letter "a" and the secret word is "apple", then your code should check if "a" is in "apple".
+
+- **2.1** Create an `if` statement that checks if the guess is in the word.
+- **2.2** In the body of the `if` statement, print a message saying `"Good guess! {guess} is in the word."`. Obviously, format the string to show the actual guess instead of {guess}.
+
+- **2.3** Create an `else` block that prints a message saying `"Sorry, {guess} is not in the word. Try again."`. This block of code will run if the guess is not in the word.
+  <br>
+
+### **Task 3:** Cheak whether the guess in the word<br>
+
+Good job so far! But your code probably doesn't look great. It's hard to tell which lines do what.
+
+Create 2 functions, `check_guess` and `ask_for_input` functions which contain the code for those two things.
+
+#### **The check_guess function:**
+The `check_guess` function will take the guessed letter as an argument and check if the letter is in the word.
+
+- **3.1** Define a function called `check_guess`. pass in the `guess` as a parameter for the function. Write the code for the following steps in the body of this function.<br>
+- **3.2** Convert the `guess` into lower case.<br>
+- **3.3** Move the code that you wrote to check if the guess is in the word into this function block.<br>
+
+#### **The ask_for_input:**
+
+- **3.4** Define a function called `ask_for_input`.<br>
+
+- **3.5** Move the code that you wrote in the `Iteratively check if the input is a valid guess` task into this function block.<br>
+
+- **3.6** Outside the while loop, but within this function, call the `check_guess` function to check if the guess is in the word. Don't forget to pass in the guess as an argument to the method.<br>
+
+- **3.7** Outside the function, call the `ask_for_input` function to test your code.<br>
+
+---
+<br>
+
+## Milestone 4
+
+Milestone 3, The aim of this milestone was to code functionality that checks if the guessing letter is part of the randomly chosen word.
+<br>
+
+### **Task 1:** Iteratively check if the guessed letter is vaild guess
+Write code that will continuously ask the user for a letter and validate it.
+
+Create a new script called `milestone_3.py`, this file will contain the code for this milestone.<br>
+- **3.1** Create a `while` loop and set the condition to `True`. Setting the condition to True ensures that the code run continuously. In the body of the loop, write the code required for the following tasks 3, 4 & 5. <br>
+- **3.2** A Ask the user to guess a letter and assign this to a variable called `guess`. <br>
 
 ---
 ## Conclusions
