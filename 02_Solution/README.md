@@ -1,1 +1,0 @@
-This is a placeholder README, used to push the empty 02_Solution folder to GitHub. Contains to be added once Hangman game is complete. This README file is to be replaced with actual solution readme.
